@@ -1,10 +1,10 @@
 <template>
   <div>
     <app-header />
-
-    <div class="container mx-auto">
+    <u-container>
       <slot />
-    </div>
+    </u-container>
+    <app-footer />
   </div>
 </template>
 
