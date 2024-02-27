@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-white rounded-t-3xl shadow-sm">
     <u-container>
-      <div class="p-4 py-6 lg:py-8">
+      <div class="pt-28 py-10 md:px-4 md:py-8">
         <div class="md:flex md:justify-between items-end">
           <div class="text-sm text-gray-700 font-medium mb-8 md:mb-0">
             هفت روز هفته از ۸ صبح تا ۱۲ شب پاسخگو هستیم
@@ -41,7 +41,9 @@
     <div class="bg-[#F8F9FC] py-9">
       <u-container>
         <div class="flex flex-col items-center">
-          <div class="text-sm text-gray-700 font-normal mb-4">تمامی حقوق مادی و معنوی این وبسایت متعلق به می‌باشد و هر گونه کپی برداری پیگرد قانونی دارد.</div>
+          <div class="text-sm text-gray-700 font-normal mb-4">
+            تمامی حقوق مادی و معنوی این وبسایت متعلق به می‌باشد و هر گونه کپی برداری پیگرد قانونی دارد.
+          </div>
           <div class="flex mt-4 sm:justify-center sm:mt-0">
             <a
               v-for="(social, index) in socialIcons"
