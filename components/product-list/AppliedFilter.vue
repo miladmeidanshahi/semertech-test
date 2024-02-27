@@ -1,14 +1,14 @@
 <template>
   <u-card
-    :ui="{ body: { padding: 'px-4' } }"
+    :ui="{ body: { padding: 'px-4 py-4 sm:py-0' } }"
     class="rounded-3xl mb-6"
   >
-    <div class="flex items-center justify-between h-16">
+    <div class="flex flex-wrap items-center justify-between min-h-16">
       <div class="text-grey-900 text-sm">
         فیلتر های اعمال شده
       </div>
-      <div>
-        <div class="flex space-x-5 space-x-reverse">
+      <div class="mt-4 sm:mt-0">
+        <div class="flex flex-wrap space-x-5 space-x-reverse">
           <u-badge
             v-for="(value, key) in filters"
             :key="key"
