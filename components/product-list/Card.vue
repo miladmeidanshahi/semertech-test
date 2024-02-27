@@ -2,7 +2,7 @@
   <u-card :ui="CardConfig">
     <nuxt-img
       :src="$attrs.image"
-      class="w-full rounded-2xl object-contain"
+      class="w-full rounded-2xl object-contain aspect-square"
     />
 
     <div
@@ -12,11 +12,12 @@
     />
 
     <u-button
+      :to="`/product-view/${$attrs.id}`"
+      :ui="{ rounded: 'rounded-2xl' }"
       size="lg"
       class="border-slate-50"
       color="white"
       block
-      :ui="{ rounded: 'rounded-2xl' }"
     >
       <span class="text-rose-500">مشاهده جزئیات</span>
       <svg
@@ -47,8 +48,3 @@ const CardConfig = {
   rounded: 'rounded-3xl'
 }
 </script>
-
-<style scoped lang="sass">
-img
-  aspect-ratio: 16/11
-</style>
